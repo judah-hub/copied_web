@@ -1,0 +1,431 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: auto;
+}
+body{
+    height: 100vh;
+    transition: all 0.4s;
+    background-color: white;
+}
+header{
+    height: 10px;
+    width: 100%;
+}
+nav{
+    float: top;
+    margin-top: -10px;
+    background-color: white;
+    padding: 0px 0px 20px 17px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 300;
+}
+
+nav .navi, nav img, .dropdown{
+    text-decoration: none;
+    color: black;
+    padding-left: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    width: 50px;
+}
+nav .help{
+    float: right;
+    padding-left: 10px;
+    padding-right: 90px;
+}
+nav button{
+    border: none;
+    background-color: white;
+}
+nav a{
+    block-size: auto 3px;
+    position: relative;
+    transition: all 0.7s;
+}
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 155px 12px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {color: orangered; transition: all 0.4s ease;}
+nav .dropdown li{
+    position: absolute;
+    opacity: 0;
+    list-style: none;
+    transform: translate(35px, -2px);
+    transition: all 0.6s;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+}
+nav .dropdown li:hover{
+    background-color: gray;
+}
+nav .dropdown li a:hover{
+    transition: all 0.7s;
+}
+nav button:hover ul li{
+    position: relative;
+    opacity: 1;
+    padding: 7px;
+    transform: translate(35px, 20px);
+    transition: all 0.8s;
+    height: 40px;
+    width: 73px;
+}
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    float: right;
+    transform: translate(-3px, 7px);
+    border-top: 5px solid red;
+    margin-left: 5px;
+}
+nav .arrow-down{
+    border-top: 5px solid rgb(255, 72, 0);
+}
+nav a:hover{
+    color: orangered;
+    transition: all 0.4s;
+}
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 35px 30px 5px 30px;
+    border-radius: 21px;
+    padding: 50px;
+}
+.sec1{
+    margin: 102px 30px 5px 30px;
+    background-color: #e9e9e9;
+    padding-right: 500px;
+}
+.sec1 p img{
+    transform: translateY(30px);
+    margin: 0px 30px 5px 25px;
+}
+.sec1 h1{
+    font-size: 50px;
+    padding-right: 150px;
+    padding-bottom: 30px;
+}
+button{
+    margin: 50px 20px 0px 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: large;
+    background-color: white;
+    cursor: pointer;
+}
+.enroll{
+    padding: 25px 45px;
+    background-color: red;
+}
+.enroll a{
+    text-decoration: none;
+    color: white;
+}
+.sec1 .download{
+    padding: 25px;
+}
+.sec1 .download a{
+    text-decoration: none;
+    color: black;
+}
+.sec2{
+    background-color: rgb(245, 28, 28);
+    padding-right: 500px;
+    color: white;
+    font-size: 45px;
+}
+.sec2 .display1, .sec2 .display2, .sec2 .display3, .sec2 .display4{
+    background-color: rgb(36, 35, 35);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    height: 90px;
+    font-size: 16px;
+    margin: 25px 10px 25px 0px;
+}
+.sec2 .display4{
+    transform: translateY(0px);
+}
+.sec3{
+    background-color: black;
+    color: white;
+    margin-right: 500px;
+    padding-right: 450px;
+}
+.sec3 strong{
+    font-size: 38px;
+}
+.sec3 img{
+    opacity: 0.8;
+    margin: -80px;
+    border-radius: 5px;
+    transform: translate(410px, 20px) rotate(3deg);
+}
+.sec4{
+    font-size: 40px;
+    margin: 35px 30px 0px 30px;
+    padding-left: 75px;
+}
+.sec5{
+    background-color: rgb(255, 187, 0);
+    margin: 0px 760px 10px 130px;
+    transform: translateY(-20px);
+    padding: 20px;
+}
+.sec5 h1{
+    font-size: 28px;
+}
+.sec5 .enroll{
+    width: 100%;
+    transform: translateX(-20px);
+    padding: 11px;
+}
+.sec5 button{
+    margin: 15px 20px 0px 20px;
+}
+.sec6{
+    background-color: rgb(255, 187, 0);
+    margin: 0px 760px 10px 130px;
+    transform: translateY(-20px);
+    padding: 20px;
+}
+.sec6 h1{
+    font-size: 28px;
+}
+.sec6 .enroll{
+    width: 100%;
+    transform: translateX(-20px);
+    padding: 11px;
+}
+.sec6 button{
+    margin: 15px 20px 0px 20px;
+}
+.image{
+    transform: translate(707px, -280px);
+}
+.sec7{
+    background-color: #e9e9e9;
+    margin: 45px 500px 35px 30px;
+}
+footer{
+    margin: 35px 30px;
+    padding: 50px 35px;
+    border-radius: 10px;
+    background-color: black;
+    padding-bottom: 100px;
+    color: white;
+    font-size: 16px;
+    height: 490px;
+}
+footer .address{
+    padding-top: 25px;
+}
+footer p{
+    padding: 20px 10px 0px 10px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    /*padding: 10px 25px -2000px 10px;*/
+    display: flex;
+    flex-direction: column;
+    transform: translate(570px, -148px);
+    padding: 10px;
+    margin: -6px;
+}
+footer h3{
+    padding: 20px;
+    border-right: 2px solid white;
+    margin: 15px 1098px 5px 0px;
+}
+footer .icon{
+    transform: translate(145px, -70px);
+    padding-right: 10px;
+}
+footer hr{
+    margin-top: 30px;
+}
+footer .copy{
+    transform: translate(10px ,-15px);
+}
+
+.floater{
+    background-color: rgb(238, 232, 232);
+    color: black;
+    width: 300px;
+    height: 520px;
+    float: right;
+    transform: translate(865px, -1663px);
+    z-index: 100;
+    position: fixed;
+}
+.floater hr{
+    margin-top: 20px;
+}
+.floater .off_head{
+    padding: 23px 0px 20px 10px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: -35px;
+    transform: translateX(-5px);
+}
+.floater img{
+    transform: translate(30px, 23px);
+    margin: -20px;
+}
+.floater .imagery2{
+    transform: translate(30px, -7px);
+}
+.floater .imagery3{
+    transform: translate(30px, -2px);
+}
+.floater .offers, .floater .offer{
+    font-size: 14px;
+    margin-left: 40px;
+}
+.floater .offer{
+    margin-top: 20px;
+}
+.floater .offers{
+    margin-top: -10px;
+    margin-bottom: -8px;
+}
+.floater button{
+    padding-left: 95px;
+    padding-right: 95px;
+    transform: translateX(-40px);
+}
+
+
+
+@media only screen and (max-width:900px) {
+    /* For mobile phones: */
+    
+    nav .navi, nav img, .dropdown{
+        text-decoration: none;
+        color: black;
+        padding-left: 0px;
+    }
+    nav{
+        float: top;
+        background-color: white;
+        padding: 30px 0px 5px 7px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .sec2 .display1, .sec2 .display2, .sec2 .display3, .sec2 .display4{
+        width: 100%;
+        font-size: large;
+        pointer-events: none;
+    }
+    
+    section{
+        padding: 30px 15px 15px 20px;
+    }
+    .sec1{
+        margin: 45px 10px 5px 10px;
+        padding-right: 20px;
+        padding-top: 101px;
+    }
+    .sec2,.sec3, .sec4, .sec5, .sec6, .sec7{
+        margin: 25px 10px 5px 10px;
+        padding-right: 20px;
+    }
+    .image{
+        display: none;
+    }
+    .sec2 .display1, .sec2 .display2, .sec2 .display3, .sec2 .display4{
+        background-color: black;
+    }
+    .sec3 img{
+        display: none;
+    }
+    footer h3{
+        padding: 20px;
+        margin: 15px 232px 5px 0px;
+    }
+    footer a{
+        text-decoration: none;
+        color: white;
+        /*padding: 10px 25px -2000px 10px;*/
+        display: flex;
+        flex-direction: column;
+        transform: translate(11px, 11px);
+        padding: 10px;
+        margin: -6px;
+    }
+    nav .dropdown, nav .navi, .help{
+        display: none;
+    }
+    .container {
+        display: inline-block;
+        cursor: pointer;
+        float: right;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 0.4s;
+        transform: translate(-15px, -6px);
+      }
+      
+      /* Rotate first bar */
+      .bar1:hover, .bar2:hover, .bar3:hover {
+        opacity: 0.5;
+    }
+}
